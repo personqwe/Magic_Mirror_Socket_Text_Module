@@ -36,12 +36,10 @@ module.exports = NodeHelper.create({
 
     socketNotificationReceived: function (notification, payload) {
         if (notification === 'CONFIG') {
-            this.config = payload;
             this.sendSocketNotification('STARTED');
         }
 		else if (notification === 'UPDATE_TEXT')
 		{
-			this.config = payload;
             this.sendSocketNotification(Text);
 		}
     }
