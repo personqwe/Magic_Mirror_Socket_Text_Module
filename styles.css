@@ -1,0 +1,16 @@
+/* 이미지를 감싸는 div 영역 */
+.Socket-Text .image-wrapper {
+    display: inline-block; 
+}
+
+/* 이미지 스타일 */
+.Socket-Text .image-wrapper img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+/* 텍스트 스타일 */
+.Socket-Text .text {
+    font-size: 16px;
+    color: #ffffff; 
+}
