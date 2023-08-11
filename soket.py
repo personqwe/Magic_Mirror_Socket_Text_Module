@@ -1,8 +1,4 @@
 import socketio
-import json
-
-sio = socketio.Client()
-import socketio
 
 sio = socketio.Client()
 
