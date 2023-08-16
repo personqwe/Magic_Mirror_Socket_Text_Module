@@ -48,6 +48,13 @@ Python에서 Socket.IO를 사용하기 위해 **`python-socketio`** 라이브러
 pip install python-socketio
 ```
 
+- http통신을 위한 requests를 설치하십시오
+
+```bash
+pip install requests
+```
+
+
 Config 구성
 
 ```jsx
