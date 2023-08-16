@@ -11,7 +11,7 @@ module.exports = NodeHelper.create({
         // Express 앱을 이용하여 HTTP 서버 생성
         const server = require('http').Server(app);
 
-        // socket.io 인스턴스를 생성하고 서버에 바인딩
+        // socket.io 인스턴스를 생성하고 서버에 바인딩 (서버간 양방향 통신 설정)
         const io = socketIO(server);
 
         const port = 3000; 
@@ -38,9 +38,5 @@ module.exports = NodeHelper.create({
         if (notification === 'CONFIG') {
             this.sendSocketNotification('STARTED');
         }
-		else if (notification === 'UPDATE_TEXT')
-		{
-            this.sendSocketNotification(Text);
-		}
     }
 });
