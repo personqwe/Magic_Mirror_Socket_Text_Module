@@ -77,3 +77,7 @@ while True:
 
 **Python-SocketIO 라이브러리 설치**:
 Python에서 Socket.IO를 사용하기 위해 **`python-socketio`** 라이브러리를 설치해야 합니다. 터미널에서 다음 명령어를 사용하여 라이브러리를 설치하세요
+
+```bash
+pip install python-socketio
+```
