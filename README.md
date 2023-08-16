@@ -21,6 +21,33 @@ nodejs를 통해 서버를 구동하고 클라이언트 측에서 Text 및 image
 
 - TOPOST 보드
 
+1. 터미널을 열고 다음 명령을 입력하여 Node.js 설치 스크립트를 내려받습니다.
+    
+    ```bash
+    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+    ```
+    
+2. 다음 명령으로 Node.js를 설치합니다.
+    
+    ```bash
+    sudo apt-get install -y nodejs
+    ```
+    
+3. 설치가 완료되면 다음 명령으로 Node.js와 npm의 버전을 확인합니다.
+    
+    ```bash
+    node -v
+    npm -v
+    ```
+    
+
+**Python-SocketIO 라이브러리 설치**:
+Python에서 Socket.IO를 사용하기 위해 **`python-socketio`** 라이브러리를 설치해야 합니다. 터미널에서 다음 명령어를 사용하여 라이브러리를 설치하세요
+
+```bash
+pip install python-socketio
+```
+
 Config 구성
 
 ```jsx
@@ -55,29 +82,3 @@ while True:
     sio.emit('message', data)  # 문자열 데이터를 서버로 전송
 ```
 
-1. 터미널을 열고 다음 명령을 입력하여 Node.js 설치 스크립트를 내려받습니다.
-    
-    ```bash
-    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-    ```
-    
-2. 다음 명령으로 Node.js를 설치합니다.
-    
-    ```bash
-    sudo apt-get install -y nodejs
-    ```
-    
-3. 설치가 완료되면 다음 명령으로 Node.js와 npm의 버전을 확인합니다.
-    
-    ```bash
-    node -v
-    npm -v
-    ```
-    
-
-**Python-SocketIO 라이브러리 설치**:
-Python에서 Socket.IO를 사용하기 위해 **`python-socketio`** 라이브러리를 설치해야 합니다. 터미널에서 다음 명령어를 사용하여 라이브러리를 설치하세요
-
-```bash
-pip install python-socketio
-```
